@@ -14,11 +14,11 @@ const PWAComponent = () => {
                 <article className="card-contain col-12 col-sm-12 col-lg-12 col-xl-12 p-0">
                     <Carousel 
                         img1='img/service2.jpg' 
-                        img2='img/service1.jpg' 
-                        img3='img/service3.jpg'
+                        img2='img/service3.jpg'
+                        img3='img/service1.jpg' 
                     />
                 </article>
-                <SloganLegend sloganData='una frase motivadora'/>
+                <SloganLegend sloganData='En lugar de horas extra, hacé dinero extra'/>
                 <About aboutData={{ 
                     title: 'Sobre nosotros',
                     text: `
@@ -33,17 +33,22 @@ const PWAComponent = () => {
                     idReferenceHash: 'nosotros'
                 }}/>
                 <SwipeUp/>
+                <article className="col-12 titlePlans">
+                    <h4>PLANES</h4>
+                </article>
                 <Card 
                     cardData={{
-                        title: 'Servicio 1',
-                        description: `Esto es una demo, esto es una demo, esto es una demo.`,
+                        title: '📈 Determinación',
+                        description: `
+                        - Recibi  tu dinero por mes
+                        `,
                         img: 'img/service1.jpg',
                         idService: 'service1'
                     }}
                 />
                 <Card 
                     cardData={{
-                        title: 'Servicio 2',
+                        title: '📈 Independencia',
                         description: `Esto es una demo, esto es una demo, esto es una demo.`,
                         img: 'img/service2.jpg',
                         idService: 'service2'
@@ -51,25 +56,20 @@ const PWAComponent = () => {
                 />
                 <Card 
                     cardData={{
-                        title: 'Servicio 3',
+                        title: '📈 Bola de nieve',
                         description: `Esto es una demo, esto es una demo, esto es una demo.`,
                         img: 'img/service3.jpg',
                         idService: 'service3'
                     }}
                 />
-                <Spacing spacing='30vh'/>
+                <Spacing spacing='20vh'/>
                 <CardModule cardData={{
                     title: 'Servicio 1',
                     text: `
-                        Esto es una demo, esto es una demo, esto es una demo.
-                        Esto es una demo, esto es una demo, esto es una demo.
-                        Esto es una demo, esto es una demo, esto es una demo.
-                        Esto es una demo, esto es una demo, esto es una demo.
-                        Esto es una demo, esto es una demo, esto es una demo.
-                        Esto es una demo, esto es una demo, esto es una demo.
-                        Esto es una demo, esto es una demo, esto es una demo.
-                        Esto es una demo, esto es una demo, esto es una demo.
-                        Esto es una demo, esto es una demo, esto es una demo.
+                        El pago del 50%  anual dividido en comisiones mensuales iguales, 
+                        en relacion al valor  que serapago durante un lapso de 12 meses, 
+                        a partir de la primera comision  hasta la decima segunda y la 
+                        devolucion del capital invertido en  el decimo tercer mes.
                     `,
                     img: 'img/service1.jpg',
                     idReferenceHash: 'service1'
